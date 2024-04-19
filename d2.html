@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+</head>
+<body>
+  <div class="main-comment">
+    <div class="comment">
+      <form action="connect1.php" method="post" onsubmit="return validateForm();">
+        <input type="text" id="name" name="name" placeholder="Your name" />
+        <span id="nameValidation" style="color: red;"></span>
+
+        <input type="text" placeholder="Your suggestion about this website" name="text_area" id="text_area"></textarea>
+        <input type="submit" value="Submit" name="btn" id="btn">
+      </form>
+    </div>
+    <div class="comment-logo">
+      <img src="comment.jpeg" height="150px" width="175px">
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      const nameInput = document.getElementById("name");
+      const nameValidation = document.getElementById("nameValidation");
+
+      const inputValue = nameInput.value;
+
+      // Regular expression to allow only letters
+      const lettersOnlyRegex = /^[a-zA-Z]+$/;
+
+      if (!lettersOnlyRegex.test(inputValue)) {
+        nameValidation.textContent = "Please enter the name in letters";
+        return false; // Prevent form submission
+      } else {
+        nameValidation.textContent = ""; // Clear validation message
+        return true; // Allow form submission
+      }
+    }
+  </script>
+</body>
+</html>

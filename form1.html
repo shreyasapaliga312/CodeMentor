@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <style>
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-left:250px;
+    margin-right:300px;
+    margin-top: 50px;
+    background-color: #ffff;
+    box-shadow: 0px 2px 5px rgba(126, 6, 133, 0.5); 
+    border: transparent;
+    
+}
+.panel-heading{
+  background-color: rgba(89, 28, 135, 0.815);
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: rgba(83, 75, 90, 0.121);;
+}
+.form-group{
+  padding-left: 120px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"]{
+    width: 60%;
+    padding: 15px;
+    margin-right: 40px;
+    border: none ;
+    background-color: rgba(124, 104, 238, 0.174);
+}
+input[type="number"]{
+    width: 52%;
+    padding: 15px;
+    margin-right: 40px;
+    border: none ;
+    background-color: rgba(124, 104, 238, 0.174);
+}
+.lab{
+  margin-right:10px;
+}
+.btn{
+width:100%;
+padding-top: 15px;
+padding-bottom: 15px ;
+background-color: rgba(89, 28, 135, 0.815);
+border: transparent;
+color: white;
+font-size: 20px;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script>
+     function validateForm() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var number = document.getElementById('number').value;
+
+            // Validate First Name
+            var namePattern = /^[a-zA-Z]+$/;
+            if (!namePattern.test(firstName)) {
+                alert('Please enter only characters for First Name.');
+                return false;
+            }
+
+            // Validate Last Name
+            if (!namePattern.test(lastName)) {
+                alert('Please enter only characters for Last Name.');
+                return false;
+            }
+
+            // Validate Phone Number
+            var numberPattern = /^\d{10}$/;
+            if (!numberPattern.test(number)) {
+                alert('Please enter a valid 10-digit phone number.');
+                return false;
+            }
+
+            return true;
+        }
+  </script>
+  </head>
+  <body>
+   
+  
+
+
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3" >
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>SignIn to CodeMentor</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post"onsubmit="return validateForm()">
+              <div class="form-group"><br>
+                <label for="firstName">First Name</label>&nbsp;&nbsp;
+                <input type="text" class="form-control" id="firstName" name="firstName" />
+              </div><br>
+              <div class="form-group">
+                <label for="lastName" class="lab">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName"/>
+              </div><br>
+              <div class="form-group">
+                <label for="gender" class="lab">Gender</label>
+                  <label for="male" class="radio-inline" >
+                    <input type="radio" name="gender" value="m"  id="male"/>Male
+                    </label>
+                  <label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female"/>Female
+                  </label>
+                  <div>
+                </div>
+              </div><br>
+              <div class="form-group">
+                <label for="email" class="lab">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <input type="text" class="form-control" id="email" name="email" />
+              </div><br>
+              <div class="form-group">
+                <label for="password" class="lab">Password</label>
+                <input  type="password" class="form-control" id="password"  name="password"/>
+              </div><br>
+              <div class="form-group">
+                <label for="number" class="lab">Phone Number</label>
+                <input  type="number" class="form-control" id="number" name="number" />
+              </div><br>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>

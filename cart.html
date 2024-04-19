@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+        .cart-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .hh {
+            margin-top: 140px;
+            text-align: center;
+        }
+        .butto {
+            background-color: green;
+            color: white;
+        }
+        
+        .remove-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">Code Mentor &#60;/&#62;</div>
+            </div>
+
+            <div class="nav-home">
+                <div class="home"> <a href="C:\xampp\htdocs\R assignment\index.html" class="atag">Home</a></div>
+            </div>
+
+            <div class="nav-courses">
+                <div class="couses"><a href="course.html" class="atag">Courses</a></div>
+            </div>
+
+            <div class="nav-Tutorial">
+                <div class="Tutorial"><a href="tutorials.html" class="atag">Tutorials</a></div>
+            </div>
+
+            <div class="nav-notes">
+                <div class="notes"><a href="notes.html" class="atag">Notes</a></div>
+            </div>
+            <div class="nav-contact">
+                <div class="contact"><a href="contact.html" class="atag">Contact</a></div>
+            </div>
+        
+
+            <div class="nav-singin">
+                <div class="signin"><a href="buyNow.html" class="pdf_CSS">BuyNow</a></div>
+            </div>
+           
+            
+        </div>
+    </header>
+    <header>
+        <div class="navbar-2">
+            <div class="nav_home_logo">
+                <div class="home_logo"> </div>
+            </div>
+            
+            <div class="nav-html">
+                <div class="html"><a href=".\htmll\HTML_Installation.html" id="nav2">HTML</a></div>
+            </div>
+            <div class="nav-css">
+                <div class="css"><a href=".\CSS_Page\css.html"id="nav2">CSS</a></div>
+            </div>
+            <div class="nav-js">
+                <div class="js"><a href=".\sejal\Installation_and_ Setup.html"id="nav2">JS</a></div>
+            </div>
+            <div class="nav-c++">
+                <div class="c++"><a href=".\PDF\C_Complete_Notes.pdf"id="nav2">C++</a></div>
+            </div>
+            <div class="nav-java">
+                <div class="java"><a href=".\PDF\Java_Complete_Notes.pdf"id="nav2">JAVA</a></div>
+            </div>
+            <div class="nav-python">
+                <div class="python"><a href=".\PDF\Python_Complete_Notes.pdf"id="nav2">PYTHON</a></div>
+            </div>
+            <div class="nav-php">
+                <div class="php">CSS</div>
+            </div>
+           
+           
+        </div>
+        
+    </header>
+    <h2 class="hh">Shopping Cart</h2><br><br>
+    <div id="cartItems"></div>
+
+    <div id="totalPrice"></div>
+    <br>
+
+    <a href="buyNow.html"><button class="butto">Back to Products</button></a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', displayCart);
+
+        function displayCart() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            const totalPriceContainer = document.getElementById('totalPrice');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            let total = 0;
+
+            cart.forEach(item => {
+                const cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+                cartItemElement.innerHTML = `
+                    <span>Name: ${item.name}</span>
+                    <span>Quantity: ${item.quantity}</span>
+                    <span>Price: $${item.price.toFixed(2)}</span>
+                    <button class="remove-button" onclick="removeFromCart('${item.name}')">Remove</button>
+                `;
+                cartItemsContainer.appendChild(cartItemElement);
+
+                total += item.price * item.quantity;
+            });
+
+            // Display total price
+            totalPriceContainer.innerHTML = `<strong>Total Price: $${total.toFixed(2)}</strong>`;
+        }
+
+        function removeFromCart(productName) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart = cart.filter(item => item.name !== productName);
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Refresh the cart display after removal
+            const cartItemsContainer = document.getElementById('cartItems');
+            cartItemsContainer.innerHTML = '';
+            displayCart();
+        }
+    </script>
+</body>
+</html>

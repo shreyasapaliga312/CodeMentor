@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 80px;
+    background-color: white;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.178);
+    font-weight:700;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    height: 80px;
+           
+}
+.atag{
+    text-decoration:  none;
+    color: black;
+}
+#nav2{
+    text-decoration: none;
+    color:rgb(88, 28, 135);
+}
+
+.logo{
+    width: 300px;
+    height: 20px;
+    font-size:23px;
+    color:rgb(88, 28, 135);
+    font-weight: bolder;
+    
+}
+.nav-singin{
+    background-color: rgb(88, 28, 135);
+    width: 110px;
+    height: 30px;
+    border-radius: 9px;
+   
+    
+}
+.signin{
+    text-align: center;
+    padding-top: 5px;
+    color:white;
+}
+
+
+
+.navbar-2{
+
+    padding-left: 195px;
+    padding-right: 195px;
+    height: 40px;
+    background-color: white;
+    border-bottom: solid rgba(128, 128, 128, 0.285);
+    box-shadow: 0px 2px 5px rgba(200, 200, 200, 0.5); 
+    color:rgb(88, 28, 135);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed; 
+    top: 82px; 
+    width: 100%; 
+            
+}
+.home_logo{
+    background-image:url(./homepage_image/logo.png);
+    width:20px;
+    height: 20px;
+    background-size: cover;
+    margin-right:30px
+
+
+}
+.home-content{
+    display: flex;
+    font-size:26px;
+    
+}
+.main-content{
+    height:300px;
+    width: 500px;
+    padding-top: 90px;
+    padding-left: 50px;
+    font-weight: bolder;
+    color:rgb(88, 28, 135);
+    margin-top: 120px;
+    
+}
+.t{
+    font-size: 31px;
+}
+.m{
+    display: flex;
+}
+.main-image{
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-top: 120px;
+}
+.button1{
+    height: 45px;
+    width: 115px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.button2{
+    height: 45px;
+    width: 115px;
+    font-size: 14px;
+    margin-left: 20px;
+    background-color: rgb(192, 189, 189);
+    border: none;
+}
+.heading{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.774);
+}
+.Recomanded_course{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:60px;
+    margin-right: 60px;
+}
+.Recomanded_course_video {
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    margin: 10px;
+    border: 2px solid transparent; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(161, 161, 161, 0.5); 
+}
+.video1{
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px ;
+}
+.free_course{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.774);
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.free_course_content{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: grey;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.free_course_heading{
+    margin-left: 15px;
+    margin-bottom:10px;
+    font-weight: bold;
+
+}
+.button_startwatching{
+    margin-left:70px;
+    width: 160px;
+    height: 35px;
+    font-size: medium;
+    background-color:rgb(88, 28, 135);
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+
+}
+
+.Testimonials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:60px;
+    margin-right: 60px;
+}
+.Testimonials1{
+    margin-right: 5px;
+    background-color:#e0e0e060;
+    padding: 40px;
+    height: 300px;
+    line-height:1.8;
+    color: rgb(104, 104, 104);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px rgba(141, 140, 140, 0.5);
+}
+.Testimonials2{
+    margin-left: 30px;
+    background-color:#e0e0e060;
+    padding: 40px;
+    height: 300px;
+    line-height:1.8;
+    color: rgb(104, 104, 104);
+    border-radius: 5px;
+     border: 2px solid transparent; 
+     box-shadow: 0 0 10px rgba(141, 140, 140, 0.5);
+}
+.span1{
+    font-size: 50px;
+    
+}
+.TestimonialInfo {
+    text-align: right;
+    
+}
+.main-comment{
+    display: flex; 
+    margin-left: 80px;
+    margin-right: 120px;  
+}
+.comment{
+    display: flex;
+    width:900px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(141, 140, 140, 0.5);
+}
+#name{
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    border: transparent;
+    box-shadow: 0 0 10px rgba(141, 140, 140, 0.5);
+    border-radius:5px;
+    padding-left: 35px;
+}
+#text_area{
+    margin-left: 50px;
+    margin-top: 15px;
+    border: transparent;
+    box-shadow: 0 0 10px rgba(141, 140, 140, 0.721);
+    width:600px;
+    height: 70px;
+    border-radius:5px;
+    padding-left: 35px;
+}
+#btn{
+    background-color:rgba(89, 28, 135, 0.801); 
+    color:white;
+    border: transparent;
+    height: 70px;
+    border-radius:5px;
+    margin-left: 5px;
+}
+
+
+.WebDeveloper{
+    color:black;
+    font-size: large;
+}
+.img1{
+    margin-left: 100px;
+    border-radius: 20px;
+    
+}
+.logo2{
+    font-size: x-large;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.806);
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.vl{
+    border-left: 5px solid grey;
+    height:30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.copright{
+    margin-left: 40px;
+    color: grey;
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+}
+.facebook{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.twitter{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.instagram{
+    margin-left: 20px;
+    margin-top: 20px; 
+}
+.github{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/* Notes.html*/
+.heading_Notes{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.774);
+    margin-top: 170px;
+
+}
+.main_box1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    margin: 10px;
+    border: 2px solid transparent; 
+    box-shadow: 0 0 10px rgba(163, 162, 162, 0.5); 
+    
+    
+}
+.notes_image_set1{
+    width: 100px;
+    height: 100px;
+    padding-left: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.notes_name{
+    padding-left:68px;
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.Download_here{
+    padding-left: 40px;
+    color:grey;
+    padding-bottom:10px;
+}
+.buttons{
+    width:150px;
+    height: 30px;
+    margin-left: 40px; 
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:rgb(88, 28, 135);
+    color: white;
+    font-weight: bold;
+}
+.pdf_CSS{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* contact.html */
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_info_content {
+    background-color: white;
+    margin: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px rgba(116, 115, 115, 0.5);
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 200px; 
+    text-align: center; 
+}
+
+.contact_image {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+.contact_image2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    padding: 10px;
+    
+}
+.contact_images{
+    padding-left: 20px;
+}
+
+/* html_page */
+.fixed-container {
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    overflow-y: scroll; /* This property enables the vertical scroll bar */
+    background-color: rgb(245, 237, 252);
+    box-shadow:0 0 10px rgba(203, 110, 203, 0.5); 
+    color:rgb(88, 28, 135);
+    font-weight: bold;
+}
+.a_html_heading{
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 10px;
+    
+      
+}
+#a_html_content2{
+    padding-left: 15px;
+
+}
+.a_html_content{
+    text-decoration: none;
+    color:rgb(88, 28, 135);
+    border-bottom: 2px solid white;
+    
+}
+
+.content {
+    margin-top: 130px;
+    margin-left: 200px;
+    padding: 20px;
+    position:static;
+    color: rgba(13, 13, 13, 0.884);
+    font-family: 'Times New Roman', Times, serif;
+}
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const nameInput = document.getElementById("nameInput");
+        const validationMessage = document.getElementById("validationMessage");
+    
+        nameInput.addEventListener("input", function () {
+          const inputValue = nameInput.value;
+          if (/[0-9]/.test(inputValue)) {
+            validationMessage.textContent = "Please enter the name in letters";
+            nameInput.value = inputValue.replace(/[0-9]/g, ''); // Remove numbers from the input
+          } else {
+            validationMessage.textContent = "";
+          }
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">Code Mentor &#60;/&#62;</div>
+            </div>
+
+            <div class="nav-home">
+                <div class="home"> <a href="C:\xampp\htdocs\R assignment\index.html" class="atag">Home</a></div>
+            </div>
+
+            <div class="nav-courses">
+                <div class="couses"><a href="course.html" class="atag">Courses</a></div>
+            </div>
+
+            <div class="nav-Tutorial">
+                <div class="Tutorial"><a href="tutorials.html" class="atag">Tutorials</a></div>
+            </div>
+
+            <div class="nav-notes">
+                <div class="notes"><a href="notes.html" class="atag">Notes</a></div>
+            </div>
+            <div class="nav-contact">
+                <div class="contact"><a href="contact.html" class="atag">Contact</a></div>
+            </div>
+            <div class="nav-singin">
+                <div class="signin"><a href="form1.html" class="pdf_CSS">SignIn</a></div>
+            </div>
+
+            <div class="nav-singin">
+                <div class="signin"><a href="buyNow.html" class="pdf_CSS">BuyNow</a></div>
+            </div>
+            
+        </div>
+    </header>
+    <header>
+        <div class="navbar-2">
+            <div class="nav_home_logo">
+                <div class="home_logo"> </div>
+            </div>
+            
+            <div class="nav-html">
+                <div class="html"><a href=".\htmll\HTML_Installation.html" id="nav2">HTML</a></div>
+            </div>
+            <div class="nav-css">
+                <div class="css"><a href=".\CSS_Page\css.html"id="nav2">CSS</a></div>
+            </div>
+            <div class="nav-js">
+                <div class="js"><a href=".\sejal\Installation_and_ Setup.html"id="nav2">JS</a></div>
+            </div>
+            <div class="nav-c++">
+                <div class="c++"><a href=".\PDF\C_Complete_Notes.pdf"id="nav2">C++</a></div>
+            </div>
+            <div class="nav-java">
+                <div class="java"><a href=".\PDF\Java_Complete_Notes.pdf"id="nav2">JAVA</a></div>
+            </div>
+            <div class="nav-python">
+                <div class="python"><a href=".\PDF\Python_Complete_Notes.pdf"id="nav2">PYTHON</a></div>
+            </div>
+            <div class="nav-php">
+                <div class="php">CSS</div>
+            </div>
+           
+           
+        </div>
+        
+    </header>
+    <script src="script.js"></script>
+    <div class="m">
+    
+    <diV class="main-content">
+        <p class="t"><span style="color: black;">Welcome to</span> CodeMentor</p><br>
+        <div class="home-content">
+            <p><span style="color: black;">Learn</span></p>&nbsp;
+            <p id="changeText"></p>
+         </div>
+         <br>
+         <p><span style="color: #999090;font-size:medium;line-height: 1.6;"l>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! CodeMentor will you teach basics and those coding techniques to people in short time which took me ages to learn.</p>
+        <br><br>
+        <button class="button1">Free course</button>
+        <button class="button2">Explore More</button>
+        </diV>
+    
+    <div class="main-image">
+        <img src="./homepage_image/img6.jpg" height="400px"width="659px">
+    </div>
+    </div>
+    <br><br>
+    
+    <h1 class="heading">Recomanded Courses</h1><br><br>
+    <div class="Recomanded_course">
+        <div class="Recomanded_course_video">
+            <img src="./homepage_image/Learn-Web-Development.png" width="100%"class="video1">
+        <p class="free_course">FREE COURSE</p>
+        <p class="free_course_heading">The Web Developement Course</p>
+        <p class="free_course_content">A web development course opens doors to digital creativity. Whether a newabie or pro, it's your path to mastering HTML, CSS, JavaScript and crafting responsive websites and websitesand dynamic apps. Stay relavent in tech's ever changing landscape and shape the digital future. Start today!  </p>
+        <button class="button_startwatching"><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w" target="_blank"class="pdf_CSS">Start Watching</a></button>
+
+
+
+
+
+
+    </div>
+    <div class="Recomanded_course_video">
+            <img src="./homepage_image/Best-Ways-To-Learn-Pytho.jpg" width="100%"class="video1">
+        </a>
+        <p class="free_course">FREE COURSE</p>
+        <p class="free_course_heading">Python Tutorials - 100 Days of Code</p>
+        <p class="free_course_content">Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!</p>
+        <br>
+        <br>
+        <br>
+        <button class="button_startwatching"><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" target="_blank" class="pdf_CSS">Start Watching</a></button>
+    </div>
+    <div class="Recomanded_course_video">
+            <img src="./homepage_image/javascript1.jpg" width="100%" height="30%"class="video1">
+        <p class="free_course">FREE COURSE</p>
+        <p class="free_course_heading">Ultimate JavaScript Course</p>
+        <p class="free_course_content">This latest JavaScript course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free. What are you waiting for? Just Enroll Buddy</p>
+        <br>
+        <br>
+        <button class="button_startwatching"><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR" target="_blank"class="pdf_CSS">Start Watching</a></button>
+    </div>
+      </div>
+      <br>
+      <br>
+      
+<h1 class="heading">Testimonials</h1>
+<br>
+<br>
+<div class="Testimonials">
+    <div class="Testimonials1">
+        <span class="span1">&#8220;</span>
+        <br>
+I don't have words to thank this website, I'm really grateful to have this website in my daily routine. If you're a mere beginner, then you can trust this website and can put your time into this content. I can assure you that it'll be worth it.
+<br>
+<div class="TestimonialInfo">
+    <span class="WebDeveloper">-Shreya</span>
+    <br>
+    Web Developer
+</div>
+    </div>
+    <div class="Testimonials2">
+        <span class="span1"> &#8220;</span>
+        <br>
+        For everyone who wants to level up their #Coding and #Dev skills - seriously, this website is for you! Both basic and advanced stacks are covered on this website, and one can learn according to his skill levels. And the icing on the cake is, everything is available for free.
+        <br>
+        <div class="TestimonialInfo">
+            <span class="WebDeveloper">-Chandu</span>
+            <br>
+            Web Developer
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="main-comment">
+<div class="comment">
+    <form action="connect1.php" method="post" onsubmit="return validateForm();">
+        <input type="text" id="name" name="name" placeholder="Your name" />
+        <span id="nameValidation" style="color: red;"></span>
+
+        <input type="text" placeholder="Your suggestion about this website" name="text_area" id="text_area"></textarea>
+        <input type="submit" value="Submit" name="btn" id="btn">
+      </form>
+</div>
+<div class="comment-logo">
+    <img src="comment.jpeg" height="150px"width="175px">
+</div>
+</div>
+<br>
+<br>
+<script>
+    function validateForm() {
+      const nameInput = document.getElementById("name");
+      const nameValidation = document.getElementById("nameValidation");
+
+      const inputValue = nameInput.value;
+
+      // Regular expression to allow only letters
+      const lettersOnlyRegex = /^[a-zA-Z]+$/;
+
+      if (!lettersOnlyRegex.test(inputValue)) {
+        nameValidation.textContent = "Please enter the name in letters";
+        return false; // Prevent form submission
+      } else {
+        nameValidation.textContent = ""; // Clear validation message
+        return true; // Allow form submission
+      }
+    }
+  </script>
+<footer>
+    <div class="footer">
+        <div class="img1"><img src="./homepage_image/logo1.png"width="70px"hight="70px"></div>
+        <div class="logo2">Code Mentor &#60;/&#62;</div> 
+        <div class="vl"></div>
+        <div class="copright">Copyright © 2023 CodeMentor.com</div> 
+        <div class="facebook"><img src="./homepage_image/facebook.jpeg"width="20px"></div>
+        <div class="twitter"><img src="./homepage_image/twitter.png"width="25px"></div>
+        <div class="instagram"><img src="./homepage_image/instagram_grey_icon.png"width="25px"></div>
+        <div class="github"><img src="./homepage_image/github.png"width="25px"></div>
+    </div>
+</footer>
+</body>
+</html>
